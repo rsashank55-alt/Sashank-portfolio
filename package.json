@@ -1,0 +1,20 @@
+{
+  "name": "sashank-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Sashank Reddy M",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p $PORT -o",
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "static"
+  ],
+  "author": "Sashank Reddy M",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
+
