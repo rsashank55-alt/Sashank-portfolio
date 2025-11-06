@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sashank Reddy M - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SR</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#interests" class="nav-link">Interests</a></li>
+                <li><a href="#subjects" class="nav-link">Subjects</a></li>
+                <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="fade-in">Hi, I'm <span class="highlight">Sashank Reddy M</span></h1>
+                <p class="fade-in-delay">Student at Ryan International School</p>
+                <p class="fade-in-delay-2">Kundalahalli, Bengaluru</p>
+                <div class="hero-buttons fade-in-delay-3">
+                    <a href="#about" class="btn btn-primary">Learn More</a>
+                    <a href="#interests" class="btn btn-secondary">My Interests</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="photo.jpg" alt="Sashank Reddy M" id="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="photo-placeholder" id="photo-placeholder">
+                        <div class="placeholder-initials">SR</div>
+                    </div>
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="card-icon">👨‍🎓</div>
+                    <h3>Student</h3>
+                    <p>I'm a 13-year-old student in 8th grade at Ryan International School, Kundalahalli, Bengaluru.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🏫</div>
+                    <h3>School</h3>
+                    <p>Ryan International School<br>Kundalahalli, Bengaluru</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests">
+        <div class="container">
+            <h2 class="section-title">My Interests</h2>
+            <div class="interests-grid">
+                <div class="interest-card f1-card">
+                    <div class="card-header">
+                        <div class="card-icon-large">🏎️</div>
+                        <h3>Formula 1</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>I'm a huge F1 fan!</p>
+                        <div class="team-badge">
+                            <span class="team-name">🏎️ Ferrari</span>
+                            <p class="team-desc">My favorite team</p>
+                        </div>
+                    </div>
+                    <div class="card-glow f1-glow"></div>
+                </div>
+                <div class="interest-card football-card">
+                    <div class="card-header">
+                        <div class="card-icon-large">⚽</div>
+                        <h3>Football</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>I love watching and playing football!</p>
+                        <div class="team-badge">
+                            <span class="team-name">⚽ Real Madrid</span>
+                            <p class="team-desc">My favorite team</p>
+                        </div>
+                    </div>
+                    <div class="card-glow football-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favorite Subjects Section -->
+    <section id="subjects" class="subjects">
+        <div class="container">
+            <h2 class="section-title">Favorite Subjects</h2>
+            <div class="subjects-grid">
+                <div class="subject-card">
+                    <div class="subject-icon">🧪</div>
+                    <h3>Chemistry</h3>
+                    <p>Exploring the world of molecules and reactions</p>
+                </div>
+                <div class="subject-card">
+                    <div class="subject-icon">⚛️</div>
+                    <h3>Physics</h3>
+                    <p>Understanding the laws that govern our universe</p>
+                </div>
+                <div class="subject-card">
+                    <div class="subject-icon">🔬</div>
+                    <h3>Biology</h3>
+                    <p>Discovering the wonders of life and living organisms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+        <div class="container">
+            <h2 class="section-title">My Hobbies</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">🤖</div>
+                    <h3>Learning AI</h3>
+                    <p>Exploring the fascinating world of Artificial Intelligence and machine learning</p>
+                    <div class="hobby-progress">
+                        <div class="progress-bar" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">📺</div>
+                    <h3>Watching Football</h3>
+                    <p>Following matches, analyzing plays, and supporting Real Madrid</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🏁</div>
+                    <h3>Watching F1</h3>
+                    <p>Following races, understanding strategies, and cheering for Ferrari</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sashank Reddy M. All rights reserved.</p>
+            <p class="footer-subtitle">Student at Ryan International School, Kundalahalli</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
