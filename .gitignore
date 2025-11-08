@@ -18,3 +18,7 @@ Thumbs.db
 *.tmp
 *.log
 
+
+# Local helper files
+add-photo.sh
+upload-photo.html
