@@ -16,12 +16,18 @@ A modern, animated portfolio website showcasing my interests, hobbies, and acade
 ## Setup Instructions
 
 1. **Add Your Photo:**
-   - Place your photo in the same folder as `index.html`
-   - Name it `photo.jpg` (or update the filename in `index.html` line 40)
+   - Place your profile photo in the same folder as `index.html`
+   - Name it `photo.jpg` (or update the filename in `index.html` line 46)
    - Supported formats: JPG, PNG, WebP
    - Recommended size: 500x500 pixels or larger (square format works best)
 
-2. **Open the Website:**
+2. **Add Your Achievement Photo:**
+   - Place your football achievement photo in the same folder
+   - Name it `trophy.jpg` (or update the filename in `index.html` line 82)
+   - Supported formats: JPG, PNG, WebP
+   - Recommended size: 1200x900 pixels or larger (landscape works great)
+
+3. **Open the Website:**
    - Simply open `index.html` in your web browser
    - Or use a local server for better performance:
      ```bash
@@ -41,6 +47,7 @@ Personal portfolio/
 ├── styles.css      # All styling and animations
 ├── script.js       # Interactive JavaScript features
 ├── photo.jpg       # Your profile photo (add this)
+├── trophy.jpg      # Football achievement photo (add this)
 └── README.md       # This file
 ```
 

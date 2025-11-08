@@ -1,0 +1,54 @@
+═══════════════════════════════════════════════════════════
+   HOW TO ADD YOUR PHOTO - SIMPLE STEPS
+═══════════════════════════════════════════════════════════
+
+STEP 1: Find Your Photo
+   - Look in your Photos app
+   - Check your Downloads folder
+   - Check your Desktop
+   - Or find it wherever you saved it
+
+STEP 2: Copy Your Photo to This Folder
+   - The folder should be open now: "Personal portfolio"
+   - Drag your photo file into this folder
+   - OR copy and paste it here
+
+STEP 3: Rename Your Photo
+   - Right-click on the photo file
+   - Select "Rename"
+   - Change the profile photo name to exactly: photo.jpg
+   - Change the football achievement photo name to exactly: trophy.jpg
+   - (If they're PNG files, use photo.png and trophy.png)
+
+STEP 4: Refresh Your Browser
+   - Go back to: http://localhost:8001/index.html
+   - Press F5 or Cmd+R to refresh
+   - Both photos should appear!
+
+═══════════════════════════════════════════════════════════
+
+SUPPORTED FILE NAMES:
+   ✓ photo.jpg
+   ✓ photo.jpeg  
+   ✓ photo.png
+   ✓ trophy.jpg
+   ✓ trophy.jpeg
+   ✓ trophy.png
+   ✓ sashank.jpg
+   ✓ profile.jpg
+
+SUPPORTED FORMATS:
+   ✓ JPG/JPEG
+   ✓ PNG
+   ✓ WebP
+
+═══════════════════════════════════════════════════════════
+
+If you're still having trouble:
+1. Make sure the file is actually in the "Personal portfolio" folder
+2. Check the file name is exactly "photo.jpg" (lowercase)
+3. Refresh your browser after adding the file
+4. Check the browser console for any errors
+
+═══════════════════════════════════════════════════════════
+

@@ -64,7 +64,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe all cards and sections
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.about-card, .interest-card, .subject-card, .hobby-card');
+    const animatedElements = document.querySelectorAll('.about-card, .achievement-media, .achievement-content, .interest-card, .subject-card, .hobby-card');
     
     animatedElements.forEach(el => {
         el.classList.add('fade-in-up');
@@ -98,7 +98,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Add hover effect to cards
-document.querySelectorAll('.about-card, .interest-card, .subject-card, .hobby-card').forEach(card => {
+document.querySelectorAll('.about-card, .achievement-content, .interest-card, .subject-card, .hobby-card').forEach(card => {
     card.addEventListener('mouseenter', function() {
         this.style.transition = 'all 0.3s ease';
     });
@@ -157,8 +157,62 @@ if (profilePhoto) {
     tryLoadPhoto();
 }
 
-// Add typing effect to hero text (optional enhancement)
-function typeWriter(element, text, speed = 100) {
+// Achievement photo handler
+const achievementPhoto = document.getElementById('achievement-photo');
+const achievementPlaceholder = document.getElementById('achievement-placeholder');
+const achievementPhotoNames = [
+    'trophy.jpg',
+    'trophy.jpeg',
+    'trophy.png',
+    'achievement.jpg',
+    'achievement.jpeg',
+    'achievement.png',
+    'award.jpg',
+    'award.jpeg',
+    'award.png'
+];
+
+let achievementPhotoIndex = 0;
+
+function loadNextAchievementPhoto() {
+    if (!achievementPhoto) return;
+    if (achievementPhotoIndex < achievementPhotoNames.length) {
+        achievementPhoto.src = achievementPhotoNames[achievementPhotoIndex];
+        achievementPhotoIndex++;
+    } else {
+        achievementPhoto.style.display = 'none';
+        if (achievementPlaceholder) {
+            achievementPlaceholder.style.display = 'flex';
+        }
+    }
+}
+
+if (achievementPhoto) {
+    const initialAchievementSrc = achievementPhoto.getAttribute('src');
+    if (initialAchievementSrc && achievementPhotoNames[0] !== initialAchievementSrc) {
+        achievementPhotoNames.unshift(initialAchievementSrc);
+    }
+
+    achievementPhoto.addEventListener('error', () => {
+        loadNextAchievementPhoto();
+    });
+
+    achievementPhoto.addEventListener('load', () => {
+        if (achievementPlaceholder) {
+            achievementPlaceholder.style.display = 'none';
+        }
+        achievementPhoto.style.display = 'block';
+    });
+
+    setTimeout(() => {
+        if (!achievementPhoto.complete || achievementPhoto.naturalHeight === 0) {
+            loadNextAchievementPhoto();
+        }
+    }, 150);
+}
+ 
+ // Add typing effect to hero text (optional enhancement)
+ function typeWriter(element, text, speed = 100) {
     let i = 0;
     element.innerHTML = '';
     function type() {
